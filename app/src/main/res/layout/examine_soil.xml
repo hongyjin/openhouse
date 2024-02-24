@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/backgroundBox"
+        android:layout_width="370dp"
+        android:layout_height="702dp"
+        android:background="#AED6F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재 토양"
+        android:textColor="@color/black"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewContent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 농장의 현재 상황은?"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewContent3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="농사 작물"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContent2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="40dp" />
+
+    <EditText
+        android:id="@+id/editTextUserInput"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="  현재 키우고 있는 작물"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/textViewContent3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <TextView
+        android:id="@+id/textViewContent4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="농사 지역"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserInput"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="40dp" />
+
+    <EditText
+        android:id="@+id/editTextUserInput1"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="  도/시"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContent4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <EditText
+        android:id="@+id/editTextUserInput2"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="  구"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserInput1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <EditText
+        android:id="@+id/editTextUserInput3"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="  동"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserInput2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:text="진단하기"
+        android:textSize="30sp"
+        android:onClick="onButton1Click"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserInput3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
